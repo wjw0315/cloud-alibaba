@@ -1,4 +1,4 @@
-package com.wjwcloud.nacosconsumer;
+package com.wjwcloud.sentinel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
