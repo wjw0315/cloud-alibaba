@@ -1,0 +1,29 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+          enabled: true
+      routes:
+        # =====================================
+        - id: nacos-discovery-server
+           # lb代表从注册中心获取服务
+          uri: lb://nacos-discovery-server
+          order: 8000
+          predicates:
+            # 转发该路径
+            - Path=/api/**
+            - RequestBody=1
+          # 除掉前面一个前缀
+          # 比如，请求/api/test/hello，去除掉前面一个前缀之后，最后转发到目标服务的路径为/test/hello
+          filters:
+            - StripPrefix=1
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+

@@ -1,15 +1,18 @@
-package com.wjwcloud.sentinel;
+package com.wjwcloud.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
+/**
+ * @author JiaweiWu
+ */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class NacosConsumerApplication {
+public class CloudGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NacosConsumerApplication.class, args);
+		SpringApplication.run(CloudGatewayApplication.class, args);
 	}
 
 }

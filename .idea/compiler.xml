@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-gateway" />
         <module name="cloud-sentinel" />
+        <module name="cloud-sentinel (1)" />
         <module name="nacos-config" />
         <module name="nacos-consumer" />
         <module name="nacos-discovery-server" />
@@ -14,7 +16,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud-gateway" target="1.8" />
       <module name="cloud-sentinel" target="1.8" />
+      <module name="cloud-sentinel (1)" target="1.8" />
       <module name="nacos-config" target="1.8" />
       <module name="nacos-consumer" target="1.8" />
       <module name="nacos-discovery-server" target="1.8" />

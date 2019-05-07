@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/nacos-discovery-server/demo/pom.xml" />
         <option value="$PROJECT_DIR$/nacos-config/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-sentinel/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-gateway/pom.xml" />
       </list>
     </option>
   </component>

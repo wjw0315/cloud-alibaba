@@ -1,4 +1,4 @@
-package com.wjwcloud.sentinel;
+package com.wjwcloud.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
