@@ -18,7 +18,7 @@ spring:
           predicates:
             # 转发该路径
             - Path=/api/**
-            - RequestBody=1
+#            - RequestBody=1
           # 除掉前面一个前缀
           # 比如，请求/api/test/hello，去除掉前面一个前缀之后，最后转发到目标服务的路径为/test/hello
           filters:
