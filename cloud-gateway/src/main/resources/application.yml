@@ -12,15 +12,15 @@ spring:
       routes:
         # =====================================
         - id: nacos-discovery-server
-           # lb´ú±í´Ó×¢²áÖĞĞÄ»ñÈ¡·şÎñ
+           # lbä»£è¡¨ä»æ³¨å†Œä¸­å¿ƒè·å–æœåŠ¡
           uri: lb://nacos-discovery-server
           order: 8000
           predicates:
-            # ×ª·¢¸ÃÂ·¾¶
+            # è½¬å‘è¯¥è·¯å¾„
             - Path=/api/**
 #            - RequestBody=1
-          # ³ıµôÇ°ÃæÒ»¸öÇ°×º
-          # ±ÈÈç£¬ÇëÇó/api/test/hello£¬È¥³ıµôÇ°ÃæÒ»¸öÇ°×ºÖ®ºó£¬×îºó×ª·¢µ½Ä¿±ê·şÎñµÄÂ·¾¶Îª/test/hello
+          # é™¤æ‰å‰é¢ä¸€ä¸ªå‰ç¼€
+          # æ¯”å¦‚ï¼Œè¯·æ±‚/api/test/helloï¼Œå»é™¤æ‰å‰é¢ä¸€ä¸ªå‰ç¼€ä¹‹åï¼Œæœ€åè½¬å‘åˆ°ç›®æ ‡æœåŠ¡çš„è·¯å¾„ä¸º/test/hello
           filters:
             - StripPrefix=1
     nacos:
